@@ -6,7 +6,7 @@ package com.csc205.project1;
  * @author Ray Hedgecock
  * @version 1.1
  */
-public class Project1 {
+public class Project_Point{
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class Project1 {
         System.out.println("\nDistance: " + a.distance(b));
 
         double rotation = Math.PI / 2.0;
-        a.rotate(rotation);
+        a.rotate();
         System.out.println("\nRotated a " + rotation + ": " + a);
 
         Point b2 = new Point(b.getX(), b.getY());
@@ -30,5 +30,7 @@ public class Project1 {
         b.shiftY(-2);
         System.out.println("Shifted b " + b.distance(b2) + " away from original position: " + b);
 
+
     }
+
 }
