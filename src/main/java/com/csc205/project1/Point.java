@@ -1,9 +1,9 @@
 package com.csc205.project1;
 
 
-
 public class Point {
 
+    //creates private variables
     private double x;
     private double y;
 
@@ -23,15 +23,18 @@ public class Point {
     public double getX() {
         return x;
     }
+
     //get y method that returns the value of y
     public double getY() {
         return y;
     }
+
     //set x method
     public void setX(double dx) {
 
         x = dx;
     }
+
     //set y method
     public void setY(double dy) {
 
@@ -39,20 +42,17 @@ public class Point {
     }
 
 
-
-
     //rotate point method
     public void rotate(double angle) {
 
-         angle = Math.PI / 2.0;
+        angle = Math.PI / 2.0;
 
 
-        x = x*Math.cos(angle) - y*Math.sin(angle);
-        y = x*Math.sin(angle) + y*Math.cos(angle);
+        x = x * Math.cos(angle) - y * Math.sin(angle);
+        y = x * Math.sin(angle) + y * Math.cos(angle);
 
 
-
-        }
+    }
 
     //set point method
     public void setPoint(double dx, double dy) {
@@ -67,11 +67,13 @@ public class Point {
         x += dx;
 
     }
+
     //method to shift y
     public void shiftY(double dy) {
 
         y += dy;
     }
+
     //to string method
     public String toString() {
 
