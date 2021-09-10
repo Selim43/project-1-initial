@@ -42,9 +42,9 @@ public class Point {
 
 
     //rotate point method
-    public void rotate() {
+    public void rotate(double angle) {
 
-        double angle = Math.PI / 2.0;
+         angle = Math.PI / 2.0;
 
 
         x = x*Math.cos(angle) - y*Math.sin(angle);

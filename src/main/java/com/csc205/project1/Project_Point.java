@@ -22,7 +22,7 @@ public class Project_Point{
         System.out.println("\nDistance: " + a.distance(b));
 
         double rotation = Math.PI / 2.0;
-        a.rotate();
+        a.rotate(rotation);
         System.out.println("\nRotated a " + rotation + ": " + a);
 
         Point b2 = new Point(b.getX(), b.getY());
